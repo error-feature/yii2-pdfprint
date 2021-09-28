@@ -75,10 +75,15 @@ function _removeIframe(){
 
 function _onload(e){
   console.info(\'load pdf to print!\',this.id);
+  var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   var PDF = document.getElementById(this.id);
       PDF.focus();
-      PDF.contentWindow.print();
-      NProgress.done();
+  if (is_safari) {
+    setTimeout(function() { PDF.contentWindow.print(); NProgress.done(); }, 1500);
+  } else {
+    PDF.contentWindow.print();
+    NProgress.done();
+  }
 }
 
 function _pdfprint(url)

@@ -1,5 +1,5 @@
 {
-    "name": "dixonstarter/yii2-pdfprint",
+    "name": "error-feature/yii2-pdfprint",
     "description": "Load PDF into iframe and call print.",
     "type": "yii2-extension",
     "keywords": ["iframe"," print"," pdf print"," yii2","extension"],
@@ -7,7 +7,7 @@
     "repositories":[
         {
         "type": "git",
-        "url": "https://github.com/dixonsatit/yii2-pdfprint"
+        "url": "https://github.com/error-feature/yii2-pdfprint"
         }
     ],
     "authors": [
